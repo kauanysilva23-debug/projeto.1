@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Espaço Nails - Portfólio</title>
+    <title>Studio Nails - Portfólio</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
@@ -13,14 +13,12 @@
 <header>
     <h1>Studio Nails 💅</h1>
 
-    <nav aria-label="Menu principal">
+    <nav>
         <a href="#galeria">Galeria</a>
         <a href="#servicos">Serviços</a>
         <a href="#contato">Contato</a>
 
-        <button id="modoEscuro" type="button"
-            onclick="ativarModoEscuro()"
-            aria-label="Ativar modo escuro">
+        <button id="modoEscuro" type="button">
             🌙 Modo escuro
         </button>
     </nav>
@@ -28,119 +26,137 @@
 
 <main>
 
-    <section class="hero">
-        <h2>Unhas incríveis para elevar sua autoestima</h2>
-        <p>Especialista em Nail Art, Alongamento em Gel e Manicure Tradicional.</p>
-        <p>Por: Kauany Ribeiro</p>
-        <a href="#contato" class="btn">Agendar Horário</a>
-    </section>
+<section class="hero">
+    <h2>Unhas incríveis para elevar sua autoestima</h2>
 
-    <section id="galeria" class="container">
-        <h2>Minhas Artes</h2>
+    <p>
+        Especialista em Nail Art, Alongamento em Gel
+        e Manicure Tradicional.
+    </p>
 
-        <div class="galeria-grid">
+    <p>Por: Kauany Ribeiro</p>
 
-            <div class="card-unha">
-                <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=500&auto=format&fit=crop"
-                    alt="Nail Art delicada">
-                <p>Nail Art Delicada</p>
-            </div>
+    <a href="#contato" class="btn">Agendar Horário</a>
+</section>
 
-            <div class="card-unha">
-                <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=500&auto=format&fit=crop"
-                    alt="Alongamento em gel">
-                <p>Alongamento em Gel</p>
-            </div>
 
-            <div class="card-unha">
-                <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=500&auto=format&fit=crop"
-                    alt="Francesinha moderna">
-                <p>Francesinha Moderna</p>
-            </div>
+<section id="galeria" class="container">
 
-            <div class="card-unha">
-                <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=500&auto=format&fit=crop"
-                    alt="Unhas rosas">
-                <p>Unhas Rosadas</p>
-            </div>
+    <h2>Minhas Artes</h2>
 
-            <div class="card-unha">
-                <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=500&auto=format&fit=crop"
-                    alt="Unhas com brilho">
-                <p>Nail Art com Brilho</p>
-            </div>
+    <div class="galeria-grid">
 
-            <div class="card-unha">
-                <img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d2d?q=80&w=500&auto=format&fit=crop"
-                    alt="Unhas vermelhas">
-                <p>Unhas Vermelhas</p>
-            </div>
-
-            <div class="card-unha">
-                <img src="https://images.unsplash.com/photo-1639024471283-03518883512d?q=80&w=500&auto=format&fit=crop"
-                    alt="Unhas elegantes">
-                <p>Unhas Elegantes</p>
-            </div>
-
-            <div class="card-unha">
-                <img src="https://images.unsplash.com/photo-1610992015762-45dca7e7c8a0?q=80&w=500&auto=format&fit=crop"
-                    alt="Nail Art moderna">
-                <p>Nail Art Moderna</p>
-            </div>
-
+        <div class="card-unha">
+            <img
+                src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop"
+                alt="Nail Art rosa">
+            <p>Nail Art Delicada</p>
         </div>
-    </section>
 
-    <section id="servicos" class="container">
-        <h2>Serviços e Valores</h2>
+        <div class="card-unha">
+            <img
+                src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=600&auto=format&fit=crop"
+                alt="Unhas com alongamento">
+            <p>Alongamento em Gel</p>
+        </div>
 
-        <table class="tabela-precos">
-            <thead>
-                <tr>
-                    <th>Serviço</th>
-                    <th>Preço</th>
-                </tr>
-            </thead>
+        <div class="card-unha">
+            <img
+                src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=600&auto=format&fit=crop"
+                alt="Unhas com francesinha">
+            <p>Francesinha Moderna</p>
+        </div>
 
-            <tbody>
-                <tr>
-                    <td>Manicure Simples</td>
-                    <td>R$ 35,00</td>
-                </tr>
-                <tr>
-                    <td>Alongamento em Gel</td>
-                    <td>R$ 120,00</td>
-                </tr>
-                <tr>
-                    <td>Manutenção do Gel</td>
-                    <td>R$ 80,00</td>
-                </tr>
-                <tr>
-                    <td>Nail Art (por unha)</td>
-                    <td>R$ 5,00</td>
-                </tr>
-            </tbody>
-        </table>
-    </section>
+        <div class="card-unha">
+            <img
+                src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=600&auto=format&fit=crop"
+                alt="Unhas decoradas rosas">
+            <p>Unhas Rosadas</p>
+        </div>
 
-    <section id="contato" class="container contato">
-        <h2>Agende seu Horário</h2>
-        <p>Clique no botão abaixo para me chamar no WhatsApp!</p>
+        <div class="card-unha">
+            <img
+                src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=600&auto=format&fit=crop"
+                alt="Unhas decoradas com brilho">
+            <p>Nail Art com Brilho</p>
+        </div>
 
-        <a
-            href="https://wa.me/44991132553?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
-            target="_blank"
-            rel="noopener noreferrer"
-            class="btn-whats">
-            Falar no WhatsApp
-        </a>
-    </section>
+        <div class="card-unha">
+            <img
+                src="https://images.unsplash.com/photo-1599948128020-9a44505b0d2d?q=80&w=600&auto=format&fit=crop"
+                alt="Unhas vermelhas decoradas">
+            <p>Unhas Vermelhas</p>
+        </div>
+
+    </div>
+</section>
+
+
+<section id="servicos" class="container">
+
+    <h2>Serviços e Valores</h2>
+
+    <table class="tabela-precos">
+
+        <thead>
+            <tr>
+                <th>Serviço</th>
+                <th>Preço</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Manicure Simples</td>
+                <td>R$ 35,00</td>
+            </tr>
+
+            <tr>
+                <td>Alongamento em Gel</td>
+                <td>R$ 120,00</td>
+            </tr>
+
+            <tr>
+                <td>Manutenção do Gel</td>
+                <td>R$ 80,00</td>
+            </tr>
+
+            <tr>
+                <td>Nail Art (por unha)</td>
+                <td>R$ 5,00</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+</section>
+
+
+<section id="contato" class="container contato">
+
+    <h2>Agende seu Horário</h2>
+
+    <p>
+        Clique no botão abaixo para me chamar no WhatsApp!
+    </p>
+
+    <a
+        href="https://wa.me/44991132553?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn-whats">
+        Falar no WhatsApp
+    </a>
+
+</section>
 
 </main>
+
 
 <footer>
     <p>© 2026 Studio Nails - Todos os direitos reservados.</p>
 </footer>
+
 
 <script src="./script.js"></script>
 
