@@ -18,7 +18,7 @@
         <a href="#servicos">Serviços</a>
         <a href="#contato">Contato</a>
 
-        <button id="modoEscuro" type="button">
+        <button id="modoEscuro" type="button" onclick="ativarModoEscuro()">
             🌙 Modo escuro
         </button>
     </nav>
@@ -28,12 +28,7 @@
 
 <section class="hero">
     <h2>Unhas incríveis para elevar sua autoestima</h2>
-
-    <p>
-        Especialista em Nail Art, Alongamento em Gel
-        e Manicure Tradicional.
-    </p>
-
+    <p>Especialista em Nail Art, Alongamento em Gel e Manicure Tradicional.</p>
     <p>Por: Kauany Ribeiro</p>
 
     <a href="#contato" class="btn">Agendar Horário</a>
@@ -47,48 +42,59 @@
     <div class="galeria-grid">
 
         <div class="card-unha">
-            <img
-                src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop"
-                alt="Nail Art rosa">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop"
+                alt="Nail Art delicada">
             <p>Nail Art Delicada</p>
         </div>
 
         <div class="card-unha">
-            <img
-                src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=600&auto=format&fit=crop"
-                alt="Unhas com alongamento">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=600&auto=format&fit=crop"
+                alt="Alongamento em gel">
             <p>Alongamento em Gel</p>
         </div>
 
         <div class="card-unha">
-            <img
-                src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=600&auto=format&fit=crop"
-                alt="Unhas com francesinha">
+            <img src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=600&auto=format&fit=crop"
+                alt="Francesinha moderna">
             <p>Francesinha Moderna</p>
         </div>
 
         <div class="card-unha">
-            <img
-                src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=600&auto=format&fit=crop"
+            <img src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=600&auto=format&fit=crop"
                 alt="Unhas decoradas rosas">
             <p>Unhas Rosadas</p>
         </div>
 
         <div class="card-unha">
-            <img
-                src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=600&auto=format&fit=crop"
+            <img src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=600&auto=format&fit=crop"
                 alt="Unhas decoradas com brilho">
             <p>Nail Art com Brilho</p>
         </div>
 
         <div class="card-unha">
-            <img
-                src="https://images.unsplash.com/photo-1599948128020-9a44505b0d2d?q=80&w=600&auto=format&fit=crop"
+            <img src="https://images.unsplash.com/photo-1599948128020-9a44505b0d2d?q=80&w=600&auto=format&fit=crop"
                 alt="Unhas vermelhas decoradas">
             <p>Unhas Vermelhas</p>
         </div>
 
+        <!-- NOVA POSTAGEM -->
+
+        <div class="card-unha">
+            <img src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=600&auto=format&fit=crop"
+                alt="Unhas decoradas em estilo elegante">
+            <p>Unhas Elegantes</p>
+        </div>
+
+        <!-- NOVA POSTAGEM -->
+
+        <div class="card-unha">
+            <img src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=600&auto=format&fit=crop"
+                alt="Unhas com decoração moderna">
+            <p>Nail Art Moderna</p>
+        </div>
+
     </div>
+
 </section>
 
 
@@ -106,6 +112,7 @@
         </thead>
 
         <tbody>
+
             <tr>
                 <td>Manicure Simples</td>
                 <td>R$ 35,00</td>
@@ -125,6 +132,7 @@
                 <td>Nail Art (por unha)</td>
                 <td>R$ 5,00</td>
             </tr>
+
         </tbody>
 
     </table>
@@ -136,9 +144,7 @@
 
     <h2>Agende seu Horário</h2>
 
-    <p>
-        Clique no botão abaixo para me chamar no WhatsApp!
-    </p>
+    <p>Clique no botão abaixo para me chamar no WhatsApp!</p>
 
     <a
         href="https://wa.me/44991132553?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
@@ -162,3 +168,55 @@
 
 </body>
 </html>
+/* MODO ESCURO */
+
+body.modo-escuro {
+    background-color: #171217;
+    color: #f9eef4;
+}
+
+body.modo-escuro header {
+    background-color: #241d23;
+    border-color: #453740;
+}
+
+body.modo-escuro nav a {
+    color: #ffffff;
+}
+
+body.modo-escuro #modoEscuro {
+    background-color: #30202a;
+    color: #ffffff;
+    border: 1px solid #453740;
+}
+
+body.modo-escuro .hero {
+    background-color: #30202a;
+}
+
+body.modo-escuro .hero p {
+    color: #d3c4cc;
+}
+
+body.modo-escuro .card-unha {
+    background-color: #241d23;
+    border-color: #453740;
+}
+
+body.modo-escuro .card-unha p {
+    color: #d3c4cc;
+}
+
+body.modo-escuro .tabela-precos {
+    background-color: #241d23;
+    color: #ffffff;
+}
+
+body.modo-escuro .tabela-precos td {
+    color: #ffffff;
+    border-color: #453740;
+}
+
+body.modo-escuro .contato p {
+    color: #d3c4cc;
+}
