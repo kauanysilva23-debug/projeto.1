@@ -1,276 +1,198 @@
-:root {
-    --rosa: #c94f7c;
-    --rosa-escuro: #a93b64;
-    --fundo: #fff8fb;
-    --card: #fff;
-    --texto: #292229;
-    --texto-sec: #665c63;
-    --borda: #eadce3;
-}
+<!DOCTYPE html>
+<html lang="pt-BR">
 
-body.dark-mode {
-    --fundo: #171217;
-    --card: #241d23;
-    --texto: #f9eef4;
-    --texto-sec: #d3c4cc;
-    --borda: #453740;
-}
+<head>
+    <meta charset="UTF-8">
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-html {
-    scroll-behavior: smooth;
-}
+    <title>Espaço Nails - Portfólio</title>
 
-body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    color: var(--texto);
-    background: var(--fundo);
-    transition: .3s;
-}
+    <link rel="stylesheet" href="style.css">
+</head>
 
-.container {
-    width: min(90%, 1100px);
-    margin: auto;
-}
+<body>
 
-.skip-link {
-    position: absolute;
-    top: -50px;
-    left: 10px;
-    background: #000;
-    color: #fff;
-    padding: 10px;
-}
+    <header>
+        <h1>Studio Nails 💅</h1>
 
-.skip-link:focus {
-    top: 0;
-}
+        <nav aria-label="Menu principal">
+            <a href="#galeria">Galeria</a>
+            <a href="#servicos">Serviços</a>
+            <a href="#contato">Contato</a>
 
-:focus-visible {
-    outline: 3px solid #5d3df5;
-}
+            <button id="modoEscuro" aria-label="Ativar modo escuro">
+                🌙 Modo escuro
+            </button>
+        </nav>
+    </header>
 
-.cabecalho {
-    position: sticky;
-    top: 0;
-    z-index: 10;
-    background: var(--card);
-    border-bottom: 1px solid var(--borda);
-}
 
-.cabecalho-conteudo {
-    min-height: 70px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-}
+    <main>
 
-.logo {
-    color: var(--rosa);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-}
+        <section class="hero">
 
-.menu {
-    display: flex;
-    gap: 20px;
-    list-style: none;
-}
+            <h2>Unhas incríveis para elevar sua autoestima</h2>
 
-.menu a {
-    color: var(--texto);
-    text-decoration: none;
-    font-weight: bold;
-}
+            <p>
+                Especialista em Nail Art, Alongamento em Gel
+                e Manicure Tradicional.
+            </p>
 
-.menu a:hover {
-    color: var(--rosa);
-}
+            <p>Por: Kauany Ribeiro</p>
 
-.tema-btn {
-    padding: 9px 13px;
-    border: 1px solid var(--borda);
-    border-radius: 10px;
-    background: var(--card);
-    color: var(--texto);
-    cursor: pointer;
-}
+            <a href="#contato" class="btn">
+                Agendar Horário
+            </a>
 
-.hero {
-    padding: 90px 20px;
-    text-align: center;
-    background: #f9dce8;
-}
+        </section>
 
-.hero h1 {
-    font-size: clamp(2rem, 5vw, 3.3rem);
-    margin-bottom: 15px;
-}
 
-.hero-texto {
-    color: var(--texto-sec);
-    margin-bottom: 10px;
-}
+        <section id="galeria" class="container">
 
-.autora {
-    margin-bottom: 25px;
-    color: var(--texto-sec);
-}
+            <h2>Minhas Artes</h2>
 
-.btn,
-.btn-whats {
-    display: inline-block;
-    padding: 12px 22px;
-    border-radius: 10px;
-    color: #fff;
-    text-decoration: none;
-    font-weight: bold;
-}
+            <div class="galeria-grid">
 
-.btn {
-    background: var(--rosa);
-}
+                <div class="card-unha">
+                    <img
+                        src="https://images.unsplash.com/photo-1604654894610-df63bc536371?q=80&w=500&auto=format&fit=crop"
+                        alt="Nail Art delicada em unhas decoradas"
+                    >
+                    <p>Nail Art Delicada</p>
+                </div>
 
-.btn:hover {
-    background: var(--rosa-escuro);
-}
 
-.btn-whats {
-    background: #168c4b;
-    margin-top: 15px;
-}
+                <div class="card-unha">
+                    <img
+                        src="https://images.unsplash.com/photo-1632345031435-8727f6897d53?q=80&w=500&auto=format&fit=crop"
+                        alt="Unhas com alongamento em gel"
+                    >
+                    <p>Alongamento em Gel</p>
+                </div>
 
-.secao {
-    padding: 70px 0;
-}
 
-.titulo-secao {
-    text-align: center;
-    margin-bottom: 35px;
-}
+                <div class="card-unha">
+                    <img
+                        src="https://images.unsplash.com/photo-1519014816548-bf5fe059798b?q=80&w=500&auto=format&fit=crop"
+                        alt="Unhas com francesinha moderna"
+                    >
+                    <p>Francesinha Moderna</p>
+                </div>
 
-.etiqueta {
-    color: var(--rosa);
-    text-transform: uppercase;
-    font-weight: bold;
-}
 
-.galeria-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 25px;
-}
+                <!-- Nova postagem -->
 
-.card-unha {
-    overflow: hidden;
-    background: var(--card);
-    border: 1px solid var(--borda);
-    border-radius: 15px;
-    box-shadow: 0 5px 20px #0001;
-}
+                <div class="card-unha">
+                    <img
+                        src="https://images.unsplash.com/photo-1610992015732-2449b76344bc?q=80&w=500&auto=format&fit=crop"
+                        alt="Unhas decoradas na cor rosa"
+                    >
+                    <p>Unhas Rosadas</p>
+                </div>
 
-.card-unha img {
-    width: 100%;
-    height: 280px;
-    display: block;
-    object-fit: cover;
-}
 
-.card-conteudo {
-    padding: 20px;
-}
+                <!-- Nova postagem -->
 
-.card-conteudo p {
-    color: var(--texto-sec);
-}
+                <div class="card-unha">
+                    <img
+                        src="https://images.unsplash.com/photo-1607779097040-26e80aa78e66?q=80&w=500&auto=format&fit=crop"
+                        alt="Unhas decoradas com brilho"
+                    >
+                    <p>Nail Art com Brilho</p>
+                </div>
 
-.secao-destaque {
-    background: #f9dce8;
-}
 
-.tabela-wrapper {
-    overflow-x: auto;
-}
+                <!-- Nova postagem -->
 
-.tabela-precos {
-    width: 100%;
-    max-width: 800px;
-    margin: auto;
-    border-collapse: collapse;
-    background: var(--card);
-}
+                <div class="card-unha">
+                    <img
+                        src="https://images.unsplash.com/photo-1599948128020-9a44505b0d2d?q=80&w=500&auto=format&fit=crop"
+                        alt="Unhas com esmalte vermelho"
+                    >
+                    <p>Unhas Vermelhas</p>
+                </div>
 
-.tabela-precos th,
-.tabela-precos td {
-    padding: 15px;
-    text-align: left;
-    border-bottom: 1px solid var(--borda);
-}
+            </div>
 
-.tabela-precos thead {
-    background: var(--rosa);
-    color: #fff;
-}
+        </section>
 
-.tabela-precos tbody td {
-    color: var(--rosa);
-    font-weight: bold;
-}
 
-.contato {
-    text-align: center;
-}
+        <section id="servicos" class="container">
 
-.contato-card {
-    max-width: 700px;
-    margin: auto;
-    padding: 40px 20px;
-    background: var(--card);
-    border: 1px solid var(--borda);
-    border-radius: 15px;
-}
+            <h2>Serviços e Valores</h2>
 
-.rodape {
-    padding: 30px;
-    text-align: center;
-    color: #fff;
-    background: #251b22;
-}
+            <table class="tabela-precos">
 
-@media (max-width: 700px) {
-    .cabecalho-conteudo {
-        flex-direction: column;
-        padding: 15px 0;
-    }
+                <thead>
+                    <tr>
+                        <th>Serviço</th>
+                        <th>Preço</th>
+                    </tr>
+                </thead>
 
-    .menu {
-        gap: 12px;
-    }
+                <tbody>
 
-    .tema-btn span {
-        display: none;
-    }
+                    <tr>
+                        <td>Manicure Simples</td>
+                        <td>R$ 35,00</td>
+                    </tr>
 
-    .hero {
-        padding: 60px 15px;
-    }
+                    <tr>
+                        <td>Alongamento em Gel</td>
+                        <td>R$ 120,00</td>
+                    </tr>
 
-    .galeria-grid {
-        grid-template-columns: 1fr;
-    }
-}
+                    <tr>
+                        <td>Manutenção do Gel</td>
+                        <td>R$ 80,00</td>
+                    </tr>
 
-@media (prefers-reduced-motion: reduce) {
-    * {
-        scroll-behavior: auto;
-        transition: none !important;
-    }
-}
+                    <tr>
+                        <td>Nail Art (por unha)</td>
+                        <td>R$ 5,00</td>
+                    </tr>
+
+                </tbody>
+
+            </table>
+
+        </section>
+
+
+        <section id="contato" class="container contato">
+
+            <h2>Agende seu Horário</h2>
+
+            <p>
+                Clique no botão abaixo para me chamar no WhatsApp!
+            </p>
+
+            <a
+                href="https://wa.me/44991132553?text=Olá!%20Gostaria%20de%20agendar%20um%20horário."
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn-whats"
+            >
+                Falar no WhatsApp
+            </a>
+
+        </section>
+
+    </main>
+
+
+    <footer>
+
+        <p>
+            © 2026 Studio Nails - Todos os direitos reservados.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
